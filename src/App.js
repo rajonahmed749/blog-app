@@ -7,6 +7,8 @@ import {
 } from "react-router-dom";
 import TechNews from "./components/News/TechNews";
 import Menubar from "./components/Common/Menubar/Menubar";
+import Technology from "./components/Technology/Technology";
+import Entertainment from "./components/Entertainment/Entertainment";
 
 function App() {
   return (
@@ -17,8 +19,11 @@ function App() {
           <Route path="/news">
             <TechNews />
           </Route>
-          <Route path="/users">
-            {/* <Users /> */}
+          <Route path="/technology">
+            <Technology/>
+          </Route>
+          <Route path="/entertainment">
+            <Entertainment/>
           </Route>
           <Route exact path="/">
             <Home />
